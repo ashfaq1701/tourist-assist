@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/find_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="My Location"
+            android:onClick="findLocationListener"/>
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">"
+            <TextView
+                android:id="@+id/radius_text"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Set Radius"
+                android:gravity="center_vertical"
+                android:textSize="20sp"/>
+            <LinearLayout 
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+            	<EditText
+                	android:id="@+id/set_radius"
+                	android:layout_width="0dp"
+                	android:layout_height="match_parent"
+                	android:layout_weight="1"
+                	android:inputType="text"
+                	android:hint="Radius"/>
+            	<Button 
+            	    android:id="@+id/radius_done"
+            	    android:layout_width="0dp"
+            	    android:layout_height="wrap_content"
+            	    android:layout_weight="1"
+            	    android:text="Set"
+            	    android:onClick="radiusDoneListener"/>
+            	</LinearLayout>
+           </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/view_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="View In List"
+            android:onClick="listViewListener"/>
+        <Button 
+            android:id="@+id/view_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="View In Map"
+            android:onClick="mapViewListener"/>
+    </LinearLayout> 
+</LinearLayout>

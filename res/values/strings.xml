@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tourist Assist</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="map_activity">MapActivity</string>
+    <string name="list_activity">ListViewActivity</string>
+    <string name="show_path_activity">ShowPathActivity</string>
+    <string name="place_details_activity">PlaceDetailsActivity</string>
+
+</resources>
